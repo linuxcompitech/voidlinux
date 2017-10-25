@@ -1,8 +1,0 @@
-mkdir void
-cd void
-git clone https://github.com/voidlinux/void-packages.git
-cd void-packages
-./xbps-src binary-bootstrap
-echo  XBPS_ALLOW_RESTRICTED=yes >> etc/conf
-./xbps-src pkg google-chrome
-sudo xbps-install --repository=hostdir/binpkgs/nonfree google-chrome
